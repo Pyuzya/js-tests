@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex">
+        <form method="get" name="search" id="search">
+            <input required type="text" name='text' id="text" class="search" autocomplete="off" placeholder='Искать'>
+            <input type="submit" name="submit" class="submit" value="Поиск">
+        </form>
+        <h1>Результаты</h1>
+        <div class="result" id="result">
+
+        </div>
+    </div>
+</body>
+<script type="module" src="scripts.js"></script>
+
+</html>
