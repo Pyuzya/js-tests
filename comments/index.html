@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="form">
+            <form action="./" name="comment" method="POST" id="commentForm">
+                <input required pattern='^[a-zA-ZА-Яа-яЁё]+$' type="text" name="name" placeholder="Имя" id="name"
+                       autocomplete="off">
+                <textarea class='textarea' required type="text" name="commentText" placeholder="Комментарий"
+                          id="comment"></textarea>
+                <input type="date" name="date" id="date">
+
+                <button type="submit" id="submit">Добавить</button>
+            </form>
+        </div>
+        <ul class='comments'>
+            <li class="commentElem" id="commentElem">
+                <h4>ppppp</h4>
+                <p>sdaaaaaaaaasss</p>
+                <img onclick="like(this)" class="heart" id="heart" src="heart.svg" alt="">
+                <img onclick='remove(this)' class="emptyTrash" id="emptyTrash" src="empty-trash.svg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+.form {
+    height: 500px;
+}
+
+
+.form form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form form * {
+    display: block;
+    margin-bottom: 10px;
+}
+textarea {
+    word-break: break-word;
+    overflow: hidden;
+    width: 400px;
+    height: 150px;
+}
+
+.flex {
+    display: flex;
+    justify-content:space-around;
+}
+
+li {
+    display:block;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 200px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    transition: 0.1s;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+img:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.heart {
+    opacity: 0.2;
+}
+
+.red{
+    opacity: 1;
+}
